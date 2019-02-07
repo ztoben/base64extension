@@ -1,5 +1,5 @@
 ## base64extension
 
-*A chrome extension for base64 encoding/decoding*
+*A Chrome and Firefox extension for base64 encoding/decoding*
 
-Get the live version [here](https://chrome.google.com/webstore/detail/base64extension/okmdllpcbdhmhabhoheagplkjkbijcid).
+Get the Chrome version [here](https://chrome.google.com/webstore/detail/base64extension/okmdllpcbdhmhabhoheagplkjkbijcid).

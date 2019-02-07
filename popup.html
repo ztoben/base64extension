@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+    }
+
     input {
       height: 30px;
-      width: 300px;
       padding: 5px;
+      flex: 1;
     }
 
     .button-holder {
+      flex: 1;
       display: inline-flex;
       margin-top: 5px;
     }
@@ -17,11 +26,15 @@
       background: none;
       margin-right: 5px;
     }
+
+    h3 {
+      margin: 5px 0 10px;
+    }
   </style>
   <title>Base64Decode</title>
 </head>
 <body>
-  <h4>Base64 Encode/Decode</h4>
+  <h3>Base64 Encode/Decode</h3>
   <input id="base64string" type="text" placeholder="Enter string here..."/>
   <div class="button-holder">
     <button id="decode" class="btn">Decode</button>
