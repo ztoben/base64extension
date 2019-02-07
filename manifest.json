@@ -1,6 +1,6 @@
 {
   "name": "Base64Extension",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Decode base64 strings",
   "permissions": ["declarativeContent"],
   "manifest_version": 2,
