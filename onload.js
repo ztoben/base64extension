@@ -1,6 +1,12 @@
 const input = document.getElementById('base64string');
 const copyButton = document.getElementById('copy');
 const decodeButton = document.getElementById('decode');
+const encodeButton = document.getElementById('encode');
+
+function focusInput() {
+  input.focus();
+  input.select();
+}
 
 function decode() {
   const value = input.value;
@@ -8,20 +14,33 @@ function decode() {
   if (value !== '') {
     input.value = window.atob(value);
   }
+
+  focusInput();
+}
+function encode() {
+  const value = input.value;
+
+  if (value !== '') {
+    input.value = window.btoa(value);
+  }
+
+  focusInput();
 }
 
 function copy() {
-  console.log('copy');
+  focusInput();
+  document.execCommand('copy');
 }
 
 function addEventListeners() {
   decodeButton.addEventListener('click', decode);
+  encodeButton.addEventListener('click', encode);
   copyButton.addEventListener('click', copy);
 }
 
 function load() {
-  input.focus();
   addEventListeners();
+  focusInput();
 }
 
 load();
