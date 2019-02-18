@@ -8,7 +8,7 @@ function focusInput() {
   input.select();
 }
 
-function decode() {
+export function decode() {
   const value = input.value;
 
   if (value !== '') {
